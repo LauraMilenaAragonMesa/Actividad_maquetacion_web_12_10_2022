@@ -5,12 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Parallax Scrolling Website using ScrollTrigger | How to Make Parallax Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
-    
-</body>
+ 
+    <header>
+        <a href="#" class="Logo">Logo</a>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>  
+    <section class="parallax">
+        <h2 id="text">Parallax website</h2>
+        <img src="imagenes/monutain_01.png" id="m1">
+        <img src="imagenes/trees_02.png" id="t2">
+        <img src="imagenes/monutain_02.png" id="m2">
+        <img src="imagenes/trees_01.png" id="t1">
+        <img src="imagenes/man.png" id="man">
+        <img src="imagenes/plants.png" id="plants">
+
+    </section> 
+    <section class="sec">
+        <h2>Parallax Scrolling Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Vitae asperiores consequuntur sapiente magni sint porro 
+            tempora vel, placeat consequatur, tempore ex enim 
+            nesciunt, beatae eaque aperiam aliquam ducimus suscipit 
+            dicta a? Laudantium eaque ea soluta, harum id assumenda 
+            corrupti fugit minus temporibus atque at sapiente nam 
+            eligendi illum aliquam! Minus, optio incidunt? Architecto 
+            aliquam velit quaerat hic explicabo adipisci aut dolor 
+            officia repellat, doloribus cupiditate soluta. Dolores 
+            fugiat, labore aliquam, asperiores omnis placeat 
+            blanditiis illum optio at vero autem facilis ducimus 
+            tempora? Voluptates commodi dicta ducimus unde nam, 
+            autem tempora, aut assumenda aperiam doloribus itaque 
+            exercitationem est impedit, possimus dolorem ullam vel? 
+            Minima, nam similique natus ut animi dolorum sequi.<br><br> 
+            Totam, officiis reprehenderit nulla odit inventore 
+            laborum autem facere assumenda voluptas quos quo, error 
+            iste omnis est debitis beatae voluptatum aut. Corporis 
+            iusto excepturi unde mollitia dolorum, architecto 
+            obcaecati sed quis, voluptas, earum consectetur nihil sit 
+            aperiam ex perferendis! Porro hic eos quisquam non eaque 
+            provident culpa tenetur, vitae numquam impedit reiciendis 
+            vel, earum rem dolorem perferendis velit repudiandae 
+            temporibus consequuntur nobis repellendus dolorum? Itaque 
+            molestias iusto blanditiis tempora voluptates vero illum 
+            incidunt quas iste totam esse modi facilis pariatur 
+            consectetur et nisi numquam maxime harum, autem velit? 
+            Magnam nihil nostrum dignissimos est itaque officia, 
+            aliquam animi sequi provident voluptate harum illo nobis 
+            consequuntur aliquid, vel numquam! Corporis magni minima 
+            accusantium amet hic labore quo, voluptatum ab delectus 
+            eveniet debitis eaque laudantium corrupti saepe quisquam 
+            aut autem asperiores soluta.<br><br> Sapiente pariatur neque iusto 
+            debitis officia laboriosam eius tempora, temporibus 
+            consequuntur amet maxime saepe sequi sed magnam sunt 
+            deserunt quam! Voluptatem animi dolorum labore, sequi 
+            corporis, maiores voluptatibus dolores blanditiis nam 
+            laboriosam repellendus ipsa ullam. In facilis, mollitia 
+            nesciunt laudantium pariatur possimus alias rerum 
+            necessitatibus, dolorum exercitationem totam, itaque 
+            inventore magnam deserunt neque id dolorem amet 
+            consequuntur nam assumenda error. Quis sed enim quaerat 
+            nisi temporibus. Iste officia labore, accusantium quis 
+            voluptatem unde facere numquam veritatis commodi sunt 
+            architecto asperiores quas ratione alias molestiae 
+        </p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from("#m1",{
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 100,
+        })
+        gsap.from("#m2",{
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 50,
+        })
+        gsap.from("#t2",{
+            scrollTrigger : {
+                scrub: true
+            },
+            x: -50,
+        })
+        gsap.from("#t1",{
+            scrollTrigger : {
+                scrub: true
+            },
+            x: 50,
+        })
+        gsap.from("#man",{
+            scrollTrigger : {
+                scrub: true
+            },
+            x: -200,
+        })
+        gsap.from("#text",{
+            scrollTrigger : {
+                scrub: true
+            },
+            x: 600,
+        })
+    </script>
+ </body>
 </html>
